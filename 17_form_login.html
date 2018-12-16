@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de Exemplo Estrutura Base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bee Bones">
+        <meta name="description" content="formulário">
+        <meta name="keywords" content="html5,tecnologia">
+        <style>
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+            .formLogin fieldset{
+                background: #ccc;
+            }
+            .formLogin legend{
+                background:white;
+                display:inline-block;
+                padding: 5px;
+            }
+            .formLogin label{
+                margin-top: 12px;
+                display:block;
+                margin-bottom: 5px;
+            }
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing:border-box;
+                padding: 6px;
+                font-size: 18px;
+            }
+            #user:focus, #pass:focus{
+                background: #ddd;
+            }
+            .btn{
+                margin-top: 15px;
+            }
+            #user{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="#" method="POST" class="formLogin">
+           <fieldset>
+               <legend>Login</legend>
+               <label for="user">Digite o seu usuário</label>
+               <input type="text" id="user" name="user" autofocus>
+               <label for="pass">Digite a senha</label>
+               <input type="password" id="pass" name="pass">
+               <input type="submit" value="logar" class="btn">
+           </fieldset>
+        </form>
+    </body>
+</html>
