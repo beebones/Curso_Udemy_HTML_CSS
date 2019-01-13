@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Página de Exemplo Estrutura Base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Bee Bones">
+        <meta name="description" content="exercício prático">
+        <meta name="keywords" content="html5,tecnologia">
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            .chk{
+                display: inline-block;
+                border: 2 px solid #bbb;
+                background: #ddd;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+            }
+            label{
+                height: 15px;
+                display: inline-block;
+            }
+            input[type="checkbox"]{
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                display: inline-block;
+                margin: 0;
+            }
+            input[type="checkbox"]:checked + label .chk{
+                background: #555;
+                position: relative;
+            }
+            input[type="checkbox"]:checked + label .chk:before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 4px;
+                left: 4px;
+                right: 4px;
+                border: 2px solid white;
+                transform: rotate(45deg);
+                border-top-color: transparent;
+                border-left-color: transparent;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Estrutura Básica</h1>
+        <input type="checkbox" name="qq" id="chk">
+        <label for="chk"><span class="chk"></span>li e aceito o contrato</label>
+    </body>
+</html>
